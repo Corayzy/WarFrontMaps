@@ -1,4 +1,4 @@
-package co.trmc.warfront.maps;
+package co.trmc.warfront.maps.deprecated;
 
 import co.trmc.dream.DreamPlayer;
 import co.trmc.dream.game.DreamTeam;
