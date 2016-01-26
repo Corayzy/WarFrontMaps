@@ -15,14 +15,12 @@ import org.bukkit.block.Block;
 import org.bukkit.block.BlockState;
 import org.bukkit.block.Sign;
 import org.bukkit.enchantments.Enchantment;
-import org.bukkit.entity.Arrow;
-import org.bukkit.entity.Entity;
-import org.bukkit.entity.LivingEntity;
-import org.bukkit.entity.Player;
+import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityExplodeEvent;
 import org.bukkit.event.entity.PotionSplashEvent;
 import org.bukkit.event.entity.ProjectileHitEvent;
@@ -30,6 +28,7 @@ import org.bukkit.event.hanging.HangingBreakEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.event.player.PlayerDropItemEvent;
+import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
@@ -344,6 +343,7 @@ public class Conflict extends Map {
 
     @EventHandler
     public void PotionsSplash(PotionSplashEvent event) {
+        if (!(event.getPotion().getShooter() instanceof Player)) return;
         Player shooter = (Player) event.getPotion().getShooter();
         for (LivingEntity entity : event.getAffectedEntities()) {
             if (entity instanceof Player) {
@@ -391,6 +391,19 @@ public class Conflict extends Map {
     @EventHandler
     public void onInteract(HangingBreakEvent event) {
         event.setCancelled(true);
+    }
+
+    @EventHandler
+    public void onDamage(EntityDamageByEntityEvent event) {
+        if (event.getEntity() instanceof ItemFrame)
+            if (!insideRegion(event.getEntity().getLocation()))
+                event.setCancelled(true);
+    }
+
+    @EventHandler
+    public void onDamage(PlayerInteractEntityEvent event) {
+        if (event.getRightClicked() instanceof ItemFrame)
+            event.setCancelled(true);
     }
 
     @EventHandler
