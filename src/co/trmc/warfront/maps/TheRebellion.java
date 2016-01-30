@@ -20,7 +20,7 @@ import java.util.ArrayList;
 public class TheRebellion extends Map {
 
     String mapName = "The Rebellion";
-    String[] creators = {"Bashdoor", "danshrdr"};
+    String[] creators = {"ILavaYou", "danshrdr"};
     String[] gamemodes = {"TDM", "LP"};
     Material[] disabledDrops = defaultDisabledDrops();
     DreamTeam team1 = new DreamTeam("Protectors", ChatColor.RED, 55);

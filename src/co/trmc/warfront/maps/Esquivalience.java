@@ -12,7 +12,7 @@ import org.bukkit.inventory.PlayerInventory;
 public class Esquivalience extends Map {
 
     String mapName = "Esquivalience";
-    String[] creators = {"Bashdoor", "MiCkEyMiCE", "IIDashII"};
+    String[] creators = {"ILavaYou", "MiCkEyMiCE", "IIDashII"};
     String[] gamemodes = {"FFA", "LMS"};
     Material[] disabledDrops = {Material.STONE_SWORD, Material.LEATHER_BOOTS, Material.LEATHER_LEGGINGS, Material.LEATHER_CHESTPLATE,
             Material.LEATHER_HELMET, Material.BOW, Material.ARROW};

@@ -29,7 +29,7 @@ import java.util.ArrayList;
 public class ExoticPastures extends Map {
 
     String mapName = "Exotic Pastures";
-    String[] creators = {"danshrdr", "doritopig", "Bashdoor"};
+    String[] creators = {"danshrdr", "doritopig", "ILavaYou"};
     String[] gamemodes = {"TDM", "LP", "DTM"};
     ArrayList<DTMMonument> monuments = new ArrayList<DTMMonument>();
     Material[] disabledDrops = defaultDisabledDrops();

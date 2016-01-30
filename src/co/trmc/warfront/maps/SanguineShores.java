@@ -12,7 +12,7 @@ import org.bukkit.inventory.PlayerInventory;
 public class SanguineShores extends Map {
 
     String mapName = "Sanguine Shores";
-    String[] creators = {"Bashdoor", "ep1cn00bt00b"};
+    String[] creators = {"ILavaYou", "ep1cn00bt00b"};
     String[] gamemodes = {"TDM", "KoTH"};
     Material[] disabledDrops = defaultDisabledDrops();
     DreamTeam team1 = new DreamTeam("Tourists", ChatColor.DARK_PURPLE, 20);

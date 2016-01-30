@@ -23,7 +23,7 @@ import java.util.Random;
 public class Aldfort extends Map {
 
     String mapName = "Aldfort";
-    String[] creators = {"Bashdoor"};
+    String[] creators = {"ILavaYou"};
     String[] gamemodes = {"FFA", "LMS",};
     Material[] disabledDrops = {Material.IRON_BOOTS, Material.IRON_LEGGINGS, Material.IRON_CHESTPLATE, Material.IRON_HELMET,
             Material.STONE_SWORD, Material.BOW, Material.BOW, Material.FISHING_ROD, Material.COOKED_BEEF, Material.POTION,

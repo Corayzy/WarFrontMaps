@@ -20,7 +20,7 @@ import java.util.ArrayList;
 public class Segregation extends Map {
 
     String mapName = "Segregation";
-    String[] creators = {"huego", "Bashdoor"};
+    String[] creators = {"huego", "ILavaYou"};
     String[] gamemodes = {"TDM", "DTM", "LP", "KoTH"};
     ArrayList<DTMMonument> monuments = new ArrayList<DTMMonument>();
     Material[] disabledDrops = {Material.STONE_SWORD, Material.LEATHER_HELMET, Material.LEATHER_CHESTPLATE, Material.GOLD_LEGGINGS,

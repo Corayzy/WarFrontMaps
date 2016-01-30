@@ -21,7 +21,7 @@ import java.util.ArrayList;
 public class MaplebankWoods extends Map {
 
     String mapName = "Maplebank Woods";
-    String[] creators = {"Bashdoor", "danshrdr"};
+    String[] creators = {"ILavaYou", "danshrdr"};
     String[] gamemodes = {"TDM", "KoTH", "DTM", "LP"};
     ArrayList<DTMMonument> monuments = new ArrayList<DTMMonument>();
     Material[] disabledDrops = defaultDisabledDrops();

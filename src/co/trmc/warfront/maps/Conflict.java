@@ -42,7 +42,7 @@ public class Conflict extends Map {
     ArrayList<String> selecting = new ArrayList<String>();
 
     String mapName = "Conflict";
-    String[] creators = {"Bashdoor", "Milkbottle235"};
+    String[] creators = {"ILavaYou", "Milkbottle235"};
     String[] gamemodes = {"TDM", "LP", "DDM"};
     ArrayList<Territory> territories = new ArrayList<Territory>();
     Material[] disabledDrops = {Material.LEATHER_BOOTS, Material.LEATHER_LEGGINGS, Material.LEATHER_CHESTPLATE,

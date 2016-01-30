@@ -24,7 +24,7 @@ import java.util.HashMap;
 public class FairwickVillage extends Map {
 
     String mapName = "Fairwick Village";
-    String[] creators = {"Bashdoor"};
+    String[] creators = {"ILavaYou"};
     String[] gamemodes = {"LTS", "CTF"};
     Material[] disabledDrops = defaultDisabledDrops();
     DreamTeam team1 = new DreamTeam("Red Team", ChatColor.RED, 35);

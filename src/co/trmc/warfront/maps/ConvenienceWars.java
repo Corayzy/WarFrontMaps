@@ -20,7 +20,7 @@ import java.util.ArrayList;
 public class ConvenienceWars extends Map {
 
     String mapName = "Convenience Wars";
-    String[] creators = {"Bashdoor", "MiCkeyMiCE"};
+    String[] creators = {"ILavaYou", "MiCkeyMiCE"};
     String[] gamemodes = {"LTS", "DDM", "LP"};
     ArrayList<Territory> territories = new ArrayList<Territory>();
     Material[] disabledDrops = {Material.STONE_SWORD, Material.LEATHER_HELMET, Material.LEATHER_CHESTPLATE, Material.GOLD_LEGGINGS,

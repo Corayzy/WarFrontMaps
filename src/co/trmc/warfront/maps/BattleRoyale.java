@@ -65,7 +65,7 @@ public class BattleRoyale extends Map {
     HashMap<String, Integer> aura = new HashMap<String, Integer>();
 
     String mapName = "Battle Royale";
-    String[] creators = {"Bashdoor", "ep1cn00bt00b"};
+    String[] creators = {"ILavaYou", "ep1cn00bt00b"};
     String[] gamemodes = {"TDM", "LP"};
     Material[] disabledDrops = {Material.LEATHER_BOOTS, Material.LEATHER_LEGGINGS, Material.LEATHER_CHESTPLATE,
             Material.LEATHER_HELMET, Material.CHAINMAIL_BOOTS, Material.CHAINMAIL_LEGGINGS, Material.CHAINMAIL_CHESTPLATE,

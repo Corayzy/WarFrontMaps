@@ -21,7 +21,7 @@ import java.util.ArrayList;
 public class Cubed extends Map {
 
     String mapName = "Cubed";
-    String[] creators = {"Bashdoor"};
+    String[] creators = {"ILavaYou"};
     String[] gamemodes = {"DTM", "TDM", "LP"};
     ArrayList<DTMMonument> monuments = new ArrayList<DTMMonument>();
     Material[] disabledDrops = {Material.IRON_SWORD, Material.LEATHER_BOOTS, Material.LEATHER_LEGGINGS, Material.LEATHER_CHESTPLATE,
