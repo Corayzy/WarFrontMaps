@@ -2,6 +2,7 @@ package co.trmc.warfront.maps;
 
 import co.trmc.dream.DreamPlayer;
 import co.trmc.dream.game.DreamTeam;
+import co.trmc.dream.game.util.Activatable;
 import co.trmc.dream.game.util.SerializedLocation;
 import co.trmc.dream.util.DreamUtil;
 import co.trmc.warfront.gamemode.Map;
@@ -23,7 +24,7 @@ public class Cubed extends Map {
     String mapName = "Cubed";
     String[] creators = {"ILavaYou"};
     String[] gamemodes = {"DTM", "TDM", "LP"};
-    ArrayList<DTMMonument> monuments = new ArrayList<DTMMonument>();
+    ArrayList<Activatable> monuments = new ArrayList<Activatable>();
     Material[] disabledDrops = {Material.IRON_SWORD, Material.LEATHER_BOOTS, Material.LEATHER_LEGGINGS, Material.LEATHER_CHESTPLATE,
             Material.LEATHER_HELMET, Material.GLASS_BOTTLE, Material.LOG, Material.BOW, Material.ARROW, Material.IRON_PICKAXE, Material.IRON_AXE, Material.FEATHER};
     DreamTeam team1 = new DreamTeam("Grass Team", ChatColor.DARK_GREEN, 40);
@@ -51,8 +52,8 @@ public class Cubed extends Map {
 
         setSpectatorSpawn(new SerializedLocation(44.5, 105, 96.5, 180F, 0F));
 
-        monuments.add(new DTMMonument(-1, 89, 42, -10, 139, 33, Material.WOOD, team1));
-        monuments.add(new DTMMonument(89, 89, 42, 98, 139, 33, Material.WOOD, team2));
+        monuments.add(new DTMMonument(-1, 89, 42, -10, 142, 33, Material.WOOD, team1));
+        monuments.add(new DTMMonument(89, 89, 42, 98, 142, 33, Material.WOOD, team2));
         attributes.put("monuments", monuments);
     }
 

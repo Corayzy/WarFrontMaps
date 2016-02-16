@@ -22,7 +22,7 @@ import java.util.HashMap;
 public class Zoned extends Map {
 
     String mapName = "Zoned";
-    String[] creators = {"s4y", "SS_Officer", "Trilexium"};
+    String[] creators = {"ILavaYou", "SS_Officer", "Trilexium"};
     String[] gamemodes = {"CTF", "LTS"};
     Material[] disabledDrops = defaultDisabledDrops();
     DreamTeam team1 = new DreamTeam("Magenta Team", ChatColor.DARK_PURPLE, 25);

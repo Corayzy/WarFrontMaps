@@ -12,7 +12,7 @@ import org.bukkit.inventory.PlayerInventory;
 public class SonicBoom extends Map {
 
     String mapName = "Sonic Boom";
-    String[] creators = {"s4y"};
+    String[] creators = {"ILavaYou"};
     String[] gamemodes = {"FFA", "LMS"};
     Material[] disabledDrops = {Material.STONE_SWORD, Material.LEATHER_BOOTS, Material.LEATHER_LEGGINGS, Material.LEATHER_CHESTPLATE,
             Material.LEATHER_HELMET, Material.BOW, Material.ARROW};

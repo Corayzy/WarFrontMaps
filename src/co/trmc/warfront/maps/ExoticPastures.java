@@ -31,7 +31,7 @@ public class ExoticPastures extends Map {
     String mapName = "Exotic Pastures";
     String[] creators = {"danshrdr", "doritopig", "ILavaYou"};
     String[] gamemodes = {"TDM", "LP", "DTM"};
-    ArrayList<DTMMonument> monuments = new ArrayList<DTMMonument>();
+    ArrayList<Activatable> monuments = new ArrayList<Activatable>();
     Material[] disabledDrops = defaultDisabledDrops();
     DreamTeam team1 = new DreamTeam("Farmhands", ChatColor.GOLD, 40);
     DreamTeam team2 = new DreamTeam("Ranchers", ChatColor.DARK_GREEN, 40);

@@ -23,7 +23,7 @@ public class MaplebankWoods extends Map {
     String mapName = "Maplebank Woods";
     String[] creators = {"ILavaYou", "danshrdr"};
     String[] gamemodes = {"TDM", "KoTH", "DTM", "LP"};
-    ArrayList<DTMMonument> monuments = new ArrayList<DTMMonument>();
+    ArrayList<Activatable> monuments = new ArrayList<Activatable>();
     Material[] disabledDrops = defaultDisabledDrops();
     DreamTeam team1 = new DreamTeam("Forest Team", ChatColor.DARK_GREEN, 35);
     DreamTeam team2 = new DreamTeam("River Team", ChatColor.DARK_AQUA, 35);

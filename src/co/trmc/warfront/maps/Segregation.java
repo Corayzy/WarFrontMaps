@@ -22,7 +22,7 @@ public class Segregation extends Map {
     String mapName = "Segregation";
     String[] creators = {"huego", "ILavaYou"};
     String[] gamemodes = {"TDM", "DTM", "LP", "KoTH"};
-    ArrayList<DTMMonument> monuments = new ArrayList<DTMMonument>();
+    ArrayList<Activatable> monuments = new ArrayList<Activatable>();
     Material[] disabledDrops = {Material.STONE_SWORD, Material.LEATHER_HELMET, Material.LEATHER_CHESTPLATE, Material.GOLD_LEGGINGS,
             Material.DIAMOND_BOOTS, Material.BREAD, Material.LOG, Material.BOW, Material.ARROW, Material.IRON_HELMET,
             Material.IRON_CHESTPLATE, Material.IRON_LEGGINGS, Material.IRON_BOOTS, Material.STONE_AXE, Material.DIAMOND_PICKAXE,

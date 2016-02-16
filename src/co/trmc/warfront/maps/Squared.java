@@ -2,6 +2,7 @@ package co.trmc.warfront.maps;
 
 import co.trmc.dream.DreamPlayer;
 import co.trmc.dream.game.DreamTeam;
+import co.trmc.dream.game.util.Activatable;
 import co.trmc.dream.game.util.SerializedLocation;
 import co.trmc.warfront.gamemode.Map;
 import co.trmc.warfront.gamemode.cores.util.DTMMonument;
@@ -18,9 +19,9 @@ import java.util.ArrayList;
 public class Squared extends Map {
 
     String mapName = "Squared";
-    String[] creators = {"s4y", "jakemake2"};
+    String[] creators = {"ILavaYou", "jakemake2"};
     String[] gamemodes = {"DTM", "TDM", "LP"};
-    ArrayList<DTMMonument> monuments = new ArrayList<DTMMonument>();
+    ArrayList<Activatable> monuments = new ArrayList<Activatable>();
     Material[] disabledDrops = defaultDisabledDrops();
     DreamTeam team1 = new DreamTeam("Red Team", ChatColor.RED, 25);
     DreamTeam team2 = new DreamTeam("Green Team", ChatColor.GREEN, 25);
@@ -42,8 +43,8 @@ public class Squared extends Map {
 
         setSpectatorSpawn(new SerializedLocation(-45, 103, -76.5, 0F, 0F));
 
-        monuments.add(new DTMMonument(-78, 93, -17, -83, 98, -22, Material.STAINED_GLASS, team1));
-        monuments.add(new DTMMonument(-13, 93, -22, -8, 98, -17, Material.STAINED_GLASS, team2));
+        monuments.add(new DTMMonument(-78, 93, -17, -83, 100, -22, Material.STAINED_GLASS, team1));
+        monuments.add(new DTMMonument(-13, 93, -22, -8, 100, -17, Material.STAINED_GLASS, team2));
         attributes.put("monuments", monuments);
     }
 

@@ -22,7 +22,7 @@ public class ProximateHorizon extends Map {
     String mapName = "Proximate Horizon";
     String[] creators = {"huego", "MiCkEyMiCE"};
     String[] gamemodes = {"LP", "DTM"};
-    ArrayList<DTMMonument> monuments = new ArrayList<DTMMonument>();
+    ArrayList<Activatable> monuments = new ArrayList<Activatable>();
     Material[] disabledDrops = defaultDisabledDrops();
     DreamTeam team1 = new DreamTeam("Red Team", ChatColor.RED, 50);
     DreamTeam team2 = new DreamTeam("Blue Team", ChatColor.BLUE, 50);
