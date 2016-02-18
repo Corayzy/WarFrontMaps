@@ -39,31 +39,8 @@ public class BattleRoyale extends Map {
 
     ArrayList<String> selecting = new ArrayList<String>();
     ArrayList<Material> colors = new ArrayList<Material>();
-
-    {
-        colors.add(Material.GOLD_BLOCK);
-        colors.add(Material.REDSTONE_BLOCK);
-        colors.add(Material.EMERALD_BLOCK);
-        colors.add(Material.PORTAL);
-        colors.add(Material.LAPIS_BLOCK);
-        colors.add(Material.DIAMOND_BLOCK);
-        colors.add(Material.ICE);
-    }
-
     ArrayList<Color> randomc = new ArrayList<Color>();
-
-    {
-        randomc.add(Color.GREEN);
-        randomc.add(Color.BLUE);
-        randomc.add(Color.YELLOW);
-        randomc.add(Color.RED);
-        randomc.add(Color.ORANGE);
-        randomc.add(Color.PURPLE);
-        randomc.add(Color.FUCHSIA);
-    }
-
     HashMap<String, Integer> aura = new HashMap<String, Integer>();
-
     String mapName = "Battle Royale";
     String[] creators = {"ILavaYou", "ep1cn00bt00b"};
     String[] gamemodes = {"TDM", "LP"};
@@ -78,6 +55,26 @@ public class BattleRoyale extends Map {
     DreamTeam team1 = new DreamTeam("Purple Team", ChatColor.DARK_PURPLE, 25);
     DreamTeam team2 = new DreamTeam("Cyan Team", ChatColor.DARK_AQUA, 25);
     long timeLockTime = 14500L;
+
+    {
+        colors.add(Material.GOLD_BLOCK);
+        colors.add(Material.REDSTONE_BLOCK);
+        colors.add(Material.EMERALD_BLOCK);
+        colors.add(Material.PORTAL);
+        colors.add(Material.LAPIS_BLOCK);
+        colors.add(Material.DIAMOND_BLOCK);
+        colors.add(Material.ICE);
+    }
+
+    {
+        randomc.add(Color.GREEN);
+        randomc.add(Color.BLUE);
+        randomc.add(Color.YELLOW);
+        randomc.add(Color.RED);
+        randomc.add(Color.ORANGE);
+        randomc.add(Color.PURPLE);
+        randomc.add(Color.FUCHSIA);
+    }
 
     public void readyAttributes() {
         setMapName(mapName);

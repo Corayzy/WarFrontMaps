@@ -81,27 +81,27 @@ public class DynamicGTM1 extends Map {
         equiv.setY(81);
         if (equiv.getBlock().getType() != Material.BEDROCK) event.setCancelled(true);
         equiv.setY(90);
-        if(equiv.getBlock().getType() == Material.ENDER_PORTAL_FRAME)
+        if (equiv.getBlock().getType() == Material.ENDER_PORTAL_FRAME)
             event.setCancelled(true);
         equiv.setY(81);
-        if(equiv.getBlock().getType() == Material.ENDER_PORTAL_FRAME)
+        if (equiv.getBlock().getType() == Material.ENDER_PORTAL_FRAME)
             event.setCancelled(true);
     }
 
     @EventHandler
     public void onPlace(BlockPlaceEvent event) {
         Location equiv = event.getBlock().getLocation().clone();
-        if(equiv.getY() > 100){
+        if (equiv.getY() > 100) {
             event.setCancelled(true);
             return;
         }
         equiv.setY(81);
         if (equiv.getBlock().getType() != Material.BEDROCK) event.setCancelled(true);
         equiv.setY(90);
-        if(equiv.getBlock().getType() == Material.ENDER_PORTAL_FRAME)
+        if (equiv.getBlock().getType() == Material.ENDER_PORTAL_FRAME)
             event.setCancelled(true);
         equiv.setY(81);
-        if(equiv.getBlock().getType() == Material.ENDER_PORTAL_FRAME)
+        if (equiv.getBlock().getType() == Material.ENDER_PORTAL_FRAME)
             event.setCancelled(true);
     }
 }

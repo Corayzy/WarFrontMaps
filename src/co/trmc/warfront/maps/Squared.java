@@ -10,6 +10,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
@@ -43,8 +44,8 @@ public class Squared extends Map {
 
         setSpectatorSpawn(new SerializedLocation(-45, 103, -76.5, 0F, 0F));
 
-        monuments.add(new DTMMonument(-78, 93, -17, -83, 100, -22, Material.STAINED_GLASS, team1));
-        monuments.add(new DTMMonument(-13, 93, -22, -8, 100, -17, Material.STAINED_GLASS, team2));
+        monuments.add(new DTMMonument(-80, 93, -20, -81, 98, -19, Material.STAINED_GLASS, team1));
+        monuments.add(new DTMMonument(-11, 93, -20, -10, 98, -19, Material.STAINED_GLASS, team2));
         attributes.put("monuments", monuments);
     }
 
@@ -67,6 +68,14 @@ public class Squared extends Map {
     @EventHandler
     public void onPlace(BlockPlaceEvent event) {
         Location loc = event.getBlockPlaced().getLocation();
+        if (!(loc.getBlockZ() >= -51 && loc.getBlockZ() <= 12 && loc.getBlockX() >= -103 && loc.getBlockX() <= 12)) {
+            event.setCancelled(true);
+        }
+    }
+
+    @EventHandler
+    public void onPlace(BlockBreakEvent event) {
+        Location loc = event.getBlock().getLocation();
         if (!(loc.getBlockZ() >= -51 && loc.getBlockZ() <= 12 && loc.getBlockX() >= -103 && loc.getBlockX() <= 12)) {
             event.setCancelled(true);
         }

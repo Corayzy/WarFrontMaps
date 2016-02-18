@@ -418,6 +418,10 @@ public class Conflict extends Map {
             event.setCancelled(true);
     }
 
+    private boolean insideRegion(Location loc) {
+        return loc.getZ() > 13 && loc.getZ() < 119 && loc.getX() > -88 && loc.getX() < -33;
+    }
+
     public enum Group {
         MEDIC,
         BOWMASTER,
@@ -428,9 +432,5 @@ public class Conflict extends Map {
         GREAT_WARRIOR,
         MANIAC,
         FIGHTER
-    }
-
-    private boolean insideRegion(Location loc) {
-        return loc.getZ() > 13 && loc.getZ() < 119 && loc.getX() > -88 && loc.getX() < -33;
     }
 }

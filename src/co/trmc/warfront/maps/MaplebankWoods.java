@@ -47,8 +47,8 @@ public class MaplebankWoods extends Map {
 
         setSpectatorSpawn(new SerializedLocation(14.5, 96, 96.5, 180F, 0F));
 
-        monuments.add(new DTMMonument(-9, 103, 36, -14, 109, 32, Material.OBSIDIAN, team1));
-        monuments.add(new DTMMonument(42, 103, 36, 38, 108, 32, Material.OBSIDIAN, team2));
+        monuments.add(new DTMMonument(-10, 103, 35, -14, 108, 33, Material.OBSIDIAN, team1));
+        monuments.add(new DTMMonument(42, 103, 35, 38, 108, 33, Material.OBSIDIAN, team2));
         attributes.put("monuments", monuments);
 
         ((ArrayList<Activatable>) attributes.get("noBuild")).add(new NoBuildRegion(-8, 79, -18, 94));

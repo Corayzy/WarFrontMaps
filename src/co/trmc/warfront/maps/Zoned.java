@@ -51,8 +51,8 @@ public class Zoned extends Map {
         setSpectatorSpawn(new SerializedLocation(55, 92, 11, 90F, 0F));
 
         attributes.put("flags", new HashMap<String, SerializedLocation>());
-        ((HashMap<String, SerializedLocation>)attributes.get("flags")).put(team1.getTeamName(), new SerializedLocation(-3, 89, 78));
-        ((HashMap<String, SerializedLocation>)attributes.get("flags")).put(team2.getTeamName(), new SerializedLocation(-3, 89, -56));
+        ((HashMap<String, SerializedLocation>) attributes.get("flags")).put(team1.getTeamName(), new SerializedLocation(-3, 89, 78));
+        ((HashMap<String, SerializedLocation>) attributes.get("flags")).put(team2.getTeamName(), new SerializedLocation(-3, 89, -56));
     }
 
     protected void applyInventory(DreamPlayer target) {
